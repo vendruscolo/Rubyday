@@ -20,7 +20,7 @@
 					%li
 						%a.button{:href => "sponsor.html"} sponsors
 			.content
-				.map
+				#map.map
 				.section
 					%h1 Partecipa
 					%p La partecipazione all'evento è vincolata alla registrazione tramite Eventbrite.
@@ -32,3 +32,5 @@
 					%h1 Quando
 					%p Rubyday si terrà venerdì 10 giugno 2011.
 		%footer
+		%script{:type => "text/javascript", :src => "js/initialize.js"}
+		%script{:type => "text/javascript", :src => "http://maps.google.com/maps/api/js?sensor=true&callback=initialize"}
