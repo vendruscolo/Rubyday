@@ -1,0 +1,89 @@
+@import compass/reset
+
+@import compass/utilities/general/clearfix
+
+@import compass/css3
+
+$white			: #eaeaea
+$grey				: #363636
+$red				: #880d1e
+$light-red	: #e3002f
+$dark-red		: #730000
+
+$lightFont	:	300
+$boldFont		: 500
+
+body
+	width: 960px
+	height: auto
+	margin: 0 auto
+	padding: 0
+	background: url("../images/bg.png") repeat $grey
+	color: $grey
+	font-family: "Helvetica Neue", sans-serif
+	font-weight: $lightFont
+	
+a
+	color: $red
+	text-decoration: none
+	font-weight: $boldFont
+	font-style: normal
+	+transition("padding", "0.2s", "ease-in-out")
+	&:hover
+		text-decoration: underline
+	&[href^="http://"]
+		padding-right: 20px
+		background: url("../images/arrow.png") no-repeat right
+		&:hover
+			padding-right: 25px
+			
+a.button
+	padding: 5px
+	border: 1px solid transparent
+	text-transform: uppercase
+	color: $grey
+	font-weight: $boldFont
+	+transition("none")
+	&.current, &:hover
+		+border-radius(5px)
+		border: 1px solid $dark-red
+		background: $red
+		+linear-gradient(color-stops($light-red, $red))
+		color: $white
+		text-shadow: 0 1px 0 $grey
+		text-decoration: none
+	&:active
+		position: relative
+		top: 1px
+		+linear-gradient(color-stops($red, $red))
+		color: darken($white, 20%)
+
+body > .container
+	> .content
+		width: 960px
+		position: relative
+		padding-bottom: 80px
+		overflow: hidden
+		
+		> .section
+			width: 8*40px
+			float: left
+			
+			> h1
+				width: 6*40px
+				margin: 0 auto 15px auto
+				font-size: 18px
+				font-weight: $boldFont
+			
+			> p
+				width: 6*40px
+				margin: 0 auto 20px auto
+				font-size: 16px
+				line-height: 22px
+			
+			> a
+				max-width: 7*40px
+				margin-left: 40px
+				padding-bottom: 3px
+				position: absolute
+				bottom: 70px

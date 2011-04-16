@@ -1,0 +1,40 @@
+body > .container
+	margin-bottom: 80px
+	background: url("../images/ruby.png") no-repeat bottom left $white
+	+border-bottom-radius(10px)
+	+box-shadow(rgba(0, 0, 0, 0.8), 0, 3px, 15px)
+	
+	> .header
+		+pie-clearfix
+		position: relative
+		padding-top: 20px
+		&:before
+			content: ''
+			width: 960px
+			height: 4px
+			position: absolute
+			top: 0
+			left: 0
+			background: $red
+			border-bottom: 1px solid $dark-red
+		
+		> .info
+			float: left
+			margin-left: 10px
+			font-style: italic
+			
+		> ul.nav
+			float: right
+			margin-right: 10px
+			
+			> li
+				float: left
+				margin: 0 5px
+				&:last-child
+					margin-right: 0
+					
+				> a.button
+					line-height: 0
+					font-weight: $lightFont
+					&.current
+						font-weight: $boldFont
