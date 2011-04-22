@@ -1,0 +1,53 @@
+!!! 5
+%html
+	%head
+		%title RubyDay
+		%link{:rel => "stylesheet", :type => "text/css", :href => "stylesheets/sponsor.css", :media => "all"}/
+		%meta{:charset => "UTF-8"}
+	%body
+		.container
+			.header
+				.info
+					Domande?
+					%a{:href => "mailto:info@rubyday.it"} info@rubyday.it
+				%ul.nav
+					%li
+						%a.button{:href => "/"} home
+					%li
+						%a.button{:href => "partecipa.html"} partecipa
+					%li
+						%a.button{:href => "cfp.html"} call for papers
+					%li
+						%a.button.current{:href => "sponsor.html"} sponsors
+			.logo
+			.motto
+				%h1 Vogliamo diffondere la conoscenza sull'ecosistema di Ruby in Italia.
+				%h2 Non perdere la possibilità di pubblicizzarti, sponsorizza Rubyday!
+			.content
+				.section
+					%h1 Gold
+					%p La sponsorizzazione Gold costa 1.000€.
+					%ul
+						%li Visibilità sul sito http://rubyday.it
+						%li Ringraziamenti pubblici ad inizio e fine evento
+						%li Possibilità di raccogliere i curriculum vitae dei partecipanti
+						%li Possibilità di distribuire materiale pubblicitario durante l'evento
+					%a{:href => "mailto:sponsor@rubyday.it?subject=Sponsorizzazione Gold"} sponsor@rubyday.it
+				.section
+					%h1 Silver
+					%p La sponsorizzazione Silver costa 500€
+					%ul
+						%li Visibilità sul sito http://rubyday.it
+						%li Ringraziamenti pubblici ad inizio e fine evento
+						%li Possibilità di raccogliere i curriculum vitae dei partecipanti
+					%a{:href => "mailto:sponsor@rubyday.it?subject=Sponsorizzazione Gold"} sponsor@rubyday.it
+				.section
+					%h1 Bronze
+					%p La sponsorizzazione Bronze costa 200€
+					%ul
+						%li Visibilità sul sito http://rubyday.it
+						%li Ringraziamenti pubblici ad inizio e fine evento
+					%a{:href => "mailto:sponsor@rubyday.it?subject=Sponsorizzazione Gold"} sponsor@rubyday.it
+		.footer
+		%script{:type => "text/javascript", :src => "js/initialize.js"}
+		%script{:type => "text/javascript", :src => "http://maps.google.com/maps/api/js?sensor=true&callback=initialize"}
