@@ -58,7 +58,12 @@ a.button
 		+linear-gradient(color-stops($red, $red))
 		color: darken($white, 20%)
 
+ul > li
+	list-style: inside disc
+
+
 body > .container
+	
 	> .content
 		width: 960px
 		position: relative
@@ -75,11 +80,14 @@ body > .container
 				font-size: 18px
 				font-weight: $boldFont
 			
-			> p
+			> p, ul
 				width: 6*40px
 				margin: 0 auto 20px auto
 				font-size: 16px
 				line-height: 22px
+				
+			> p + ul
+				margin-top: -10px
 			
 			> a
 				max-width: 7*40px
