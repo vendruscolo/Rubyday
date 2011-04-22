@@ -7,5 +7,11 @@ Requisiti
 Compilazione
 ============
 
-`$ haml index.haml index.html`
-`$ compass compile .` (supponendo di essere nella root del progetto)
+Compilazione di haml:
+
+		$ haml index.haml index.html
+
+Compilazione del progetto Compass:
+
+		$ compass compile .
+(supponendo di essere nella root del progetto)
