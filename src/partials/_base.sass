@@ -5,7 +5,7 @@
 @import compass/css3
 
 $white			: #eaeaea
-$grey				: #363636
+$gray				: #363636
 $red				: #880d1e
 $light-red	: #e3002f
 $dark-red		: #730000
@@ -16,16 +16,17 @@ $magenta		: #EA41AF
 $blue				: #1838EA
 $cyan				: #47B2B2
 
-$lightFont	:	300
-$boldFont		: 500
+$lightFont		:	300
+$normalFont		: 500
+$boldFont			: 700
 
 body
 	width: 960px
 	height: auto
 	margin: 0 auto
 	padding: 0
-	background: url("../images/bg.png") repeat $grey
-	color: $grey
+	background: url("../images/bg.png") repeat $gray
+	color: $gray
 	font-family: "Helvetica Neue", sans-serif
 	font-weight: $lightFont
 	
@@ -49,7 +50,7 @@ a.button
 	padding: 5px
 	border: 1px solid transparent
 	text-transform: uppercase
-	color: $grey
+	color: $gray
 	font-weight: $boldFont
 	+box-shadow(rgba(255, 255, 255, 0.6) 0 1px 0 inset)
 	+transition("none")
@@ -59,7 +60,7 @@ a.button
 		background: $red
 		+background-image(linear-gradient($light-red, $red))
 		color: $white
-		text-shadow: 0 1px 0 $grey
+		text-shadow: 0 1px 0 $gray
 		text-decoration: none
 	&:active
 		position: relative
