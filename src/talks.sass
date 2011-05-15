@@ -1,0 +1,167 @@
+@import partials/base
+@import partials/header
+@import partials/footer
+
+@import home.sass
+
+.talks > table
+	width: 780px
+	height: auto
+	margin: 0 auto 60px auto
+	padding: 0
+	border: 1px solid #bbb
+	+border-radius(10px)
+	border-collapse: separate
+	font-size: 14px
+	
+	> thead > tr
+		> th
+			padding: 10px 10px 20px 10px
+			text-align: center
+			font-weight: $boldFont
+			font-size: 20px
+		
+	> tbody > tr
+		> td
+			padding: 15px
+			text-align: left
+			line-height: 22px
+			
+			> a
+				color: $gray
+				text-decoration: none
+				font-weight: inherit
+				
+				&:hover
+					text-decoration: underline
+			
+			&[colspan="2"]
+				text-align: center
+				font-style: italic
+				font-size: 14px
+		
+			&:first-child
+				width: 100px
+		
+			&:not(:first-child)
+				width: 340px
+		
+		&:nth-child(2n+1)
+			background: darken($white, 4%)
+	
+		&.break
+			background: url("../images/break.png") repeat-x transparent center !important
+	
+			> td
+				padding: 25px
+				text-align: center
+				font-style: italic
+				font-size: 14px
+				font-weight: $boldFont
+			
+.tagged
+	display: inline-block
+	position: relative
+	top: -3px
+	padding: 6px
+	border-width: 1px
+	border-style: solid
+	vertical-align: middle
+	+border-radius(4px)
+	+box-shadow(rgba(255, 255, 255, 0.6) 0 1px 0 inset)
+	font-size: 13px
+	font-weight: $lightFont
+	line-height: 5px
+	text-shadow: 0 1px 0 #000
+	
+	&.green
+		+background-image(linear-gradient($green, darken($green, 20%)))
+		border-color: darken($green, 20%)
+		color: rgba(255, 255, 255, 0.7)
+	
+	&.yellow
+		+background-image(linear-gradient($yellow, darken($yellow, 20%)))
+		border-color: darken($yellow, 20%)
+		color: rgba(255, 255, 255, 0.7)
+	
+	&.orange
+		+background-image(linear-gradient($orange, darken($orange, 20%)))
+		border-color: darken($orange, 20%)
+		color: rgba(255, 255, 255, 0.7)
+	
+	&.red
+		+background-image(linear-gradient($light-red, darken($light-red, 20%)))
+		border-color: darken($light-red, 20%)
+		color: rgba(255, 255, 255, 0.7)
+	
+	&.magenta
+		+background-image(linear-gradient($magenta, darken($magenta, 20%)))
+		border-color: darken($magenta, 20%)
+		color: rgba(255, 255, 255, 0.7)
+	
+	&.blue
+		+background-image(linear-gradient($blue, darken($blue, 20%)))
+		border-color: darken($blue, 20%)
+		color: rgba(255, 255, 255, 0.7)
+	
+	&.cyan
+		+background-image(linear-gradient($cyan, darken($cyan, 20%)))
+		border-color: darken($cyan, 20%)
+		color: rgba(255, 255, 255, 0.7)
+	
+	&.gray
+		+background-image(linear-gradient($gray, darken($gray, 20%)))
+		border-color: darken($gray, 20%)
+		color: rgba(255, 255, 255, 0.7)
+
+.talks-details
+	width: 860px
+	clear: both
+	margin: 0 auto
+	
+	> .track1, > .track2
+		width: 405px
+		float: left
+		margin-right: 50px
+			
+		> .talk
+			margin: 30px 0
+			position: relative
+			
+			&.selected
+				padding: 10px
+				+box-shadow($light-red 0 0 10px)
+				
+				> .back
+					top: 13px !important
+				
+			> .back
+				position: absolute
+				top: 3px
+				right: 4px
+				font-size: 12px
+				font-weight: $lightFont
+			
+			> h2, > p, > ul, > .links
+				width: 90%
+			
+			> h2
+				font-size: 18px
+				font-weight: $boldFont
+			
+			> p
+				margin-top: 10px
+				font-size: 14px
+				text-indent: 10px
+				line-height: 20px
+				
+			> ul > li
+				margin: 5px 0
+				font-size: 14px
+			
+			> .links
+				margin-top: 10px
+				font-size: 14px
+		
+	> .track2
+		margin-right: 0
