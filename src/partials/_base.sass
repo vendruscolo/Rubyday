@@ -38,7 +38,9 @@ a
 	&:hover
 		text-decoration: underline
 	&[href^="http://"]
+		display: inline-block
 		padding-right: 20px
+		line-height: 20px
 		background: url("../images/arrow.png") no-repeat right
 		&:hover
 			padding-right: 25px
@@ -49,6 +51,7 @@ a.button
 	text-transform: uppercase
 	color: $grey
 	font-weight: $boldFont
+	+box-shadow(rgba(255, 255, 255, 0.6) 0 1px 0 inset)
 	+transition("none")
 	&.current, &:hover
 		+border-radius(5px)
