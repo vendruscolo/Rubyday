@@ -52,13 +52,13 @@ a.button
 	text-transform: uppercase
 	color: $gray
 	font-weight: $boldFont
-	+box-shadow(rgba(255, 255, 255, 0.6) 0 1px 0 inset)
 	+transition("none")
 	&.current, &:hover
 		+border-radius(5px)
 		border: 1px solid $dark-red
 		background: $red
 		+background-image(linear-gradient($light-red, $red))
+		+box-shadow(rgba(255, 255, 255, 0.6) 0 1px 0 inset)
 		color: $white
 		text-shadow: 0 1px 0 $gray
 		text-decoration: none
