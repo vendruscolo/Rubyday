@@ -24,7 +24,7 @@
 				%h1 Vogliamo diffondere la conoscenza sull'ecosistema di Ruby in Italia.
 				%h2 Non perdere la possibilità di pubblicizzarti, sponsorizza Rubyday!
 			.content
-				.section
+				.section.gold
 					%h1 Gold
 					%p La sponsorizzazione Gold costa 1.000€.
 					%ul
@@ -33,21 +33,31 @@
 						%li Possibilità di raccogliere i curriculum vitae dei partecipanti
 						%li Possibilità di distribuire materiale pubblicitario durante l'evento
 					%a{:href => "mailto:sponsor@rubyday.it?subject=Sponsorizzazione Gold"} sponsor@rubyday.it
-				.section
+					%a{:href => "http://mikamai.com", :target => "_blank"}
+						%img{:src => "images/mikamai-logo.png", :alt => "Mikamai"}/
+					%a{:href => "http://www.xpeppers.com/", :target => "_blank"}
+						%img{:src => "http://www.xpeppers.com/wp-content/themes/xpeppers/images/xpeppers_logo.jpg", :alt => "XPeppers"}/
+				.section.silver
 					%h1 Silver
 					%p La sponsorizzazione Silver costa 500€
 					%ul
 						%li Visibilità sul sito http://rubyday.it
 						%li Ringraziamenti pubblici ad inizio e fine evento
 						%li Possibilità di raccogliere i curriculum vitae dei partecipanti
-					%a{:href => "mailto:sponsor@rubyday.it?subject=Sponsorizzazione Gold"} sponsor@rubyday.it
-				.section
+					%a{:href => "mailto:sponsor@rubyday.it?subject=Sponsorizzazione Silver"} sponsor@rubyday.it
+				.section.bronze
 					%h1 Bronze
 					%p La sponsorizzazione Bronze costa 200€
 					%ul
 						%li Visibilità sul sito http://rubyday.it
 						%li Ringraziamenti pubblici ad inizio e fine evento
-					%a{:href => "mailto:sponsor@rubyday.it?subject=Sponsorizzazione Gold"} sponsor@rubyday.it
+					%a{:href => "mailto:sponsor@rubyday.it?subject=Sponsorizzazione Bronze"} sponsor@rubyday.it
+					%a{:href => "http://pragprog.com", :target => "_blank"}
+						%img{:src => "http://media.pragprog.com/images/cms/logos/Bookshelf_4in.png", :alt => "Pragmatic Bookshelf"}/
+					%a{:href => "http://www.jetbrains.com", :target => "_blank"}
+						%img{:src => "http://www.jetbrains.com/img/logos/logo_jetbrains.gif", :alt => "JetBrains"}/
+					%a{:href => "http://oreilly.com", :target => "_blank"}
+						%img{:src => "http://oreilly.com/images/orn_logos/oralogo_bk200.gif", :alt => "O'Reilly"}/
 		.footer
 		%script{:type => "text/javascript", :src => "js/initialize.js"}
 		%script{:type => "text/javascript", :src => "http://maps.google.com/maps/api/js?sensor=true&callback=initialize"}

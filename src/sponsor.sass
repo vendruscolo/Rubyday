@@ -3,3 +3,29 @@
 @import partials/footer
 
 @import home.sass
+
+body > .container > .content > .section > a
+	position: static
+
+body > .container > .content > .section > a > img
+	padding: 5px
+	background-color: #fff
+	border: 2px solid $gray
+	margin: 10px 0 0 0
+
+body > .container > .content > .section.gold > a > img
+	max-width: 250px
+	max-height: 120px
+
+body > .container > .content > .section.silver > a > img
+	max-width: 180px
+	max-height: 80px
+
+body > .container > .content > .section.bronze > a > img
+	max-width: 100px
+	max-height: 45px
+	display: block
+	float: left
+	
+	&:odd
+		clear: left
