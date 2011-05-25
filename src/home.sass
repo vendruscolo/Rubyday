@@ -21,3 +21,34 @@ body > .container
 			margin-bottom: 10px
 		> h2
 			font-size: 16px
+
+	> .content.sponsor
+		> .section > a
+			position: static
+
+		> .section > a > img
+			padding: 5px
+			background-color: #fff
+			border: 2px solid $gray
+			margin: 10px 0 0 0
+
+		> .section.gold > a > img
+			max-width: 250px
+			max-height: 120px
+
+		> .section.silver > a > img
+			max-width: 150px
+			max-height: 70px
+
+		> .section.bronze > a > img, > .section.media > a > img
+			max-width: 100px
+			max-height: 45px
+			display: block
+			float: left
+			
+			&:odd
+				clear: left
+		
+		> .section.media
+			clear: left
+			margin: 40px auto 0 auto
