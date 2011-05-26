@@ -1,0 +1,35 @@
+!!! 5
+%html
+	%head
+		%title Marco Borromeo
+		%link{:rel => "stylesheet", :type => "text/css", :href => "../stylesheets/talk.css", :media => "all"}/
+		%meta{:charset => "UTF-8"}
+	%body
+		.container
+			.header
+				.info
+					Domande?
+					%a{:href => "mailto:info@rubyday.it"} info@rubyday.it
+				%ul.nav
+					%li
+						%a.button{:href => "/"} home
+					%li
+						%a.button{:href => "../agenda.html"} agenda
+					%li
+						%a.button{:href => "../partecipa.html"} partecipa
+					%li
+						%a.button.current{:href => "#"} speakers
+					%li
+						%a.button{:href => "../sponsor.html"} sponsors
+			.content
+				%h1 Marco Borromeo
+				.talk-section
+					%p
+						Appassionato di Ruby da diversi anni, cerca sempre soluzioni per ottimizzare il codice prodotto.
+						Ha fondato ContinuityApp.com - una soluzione di hosted continuous integration per Ruby.
+					%h3
+						Contatti
+					%h4
+						Twitter
+						%a{href: "http://twitter.com/borros"}
+							borros
