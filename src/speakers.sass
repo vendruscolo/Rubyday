@@ -1,0 +1,29 @@
+@import partials/base
+@import partials/header
+@import partials/footer
+
+@import home.sass
+
+.talks-details
+	width: 860px
+	clear: both
+	margin: 0 auto
+	
+	> .track1, > .track2
+		width: 405px
+		float: left
+		margin-right: 50px
+			
+		> .talk
+			margin: 30px 0
+			position: relative
+			
+			> h2
+				font-size: 18px
+				font-weight: $lightFont
+				
+				> a
+					font-weight: $boldFont
+		
+	> .track2
+		margin-right: 0
