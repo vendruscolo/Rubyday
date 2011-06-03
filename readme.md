@@ -15,3 +15,6 @@ Compilazione del progetto Compass:
 
 		$ compass compile .
 (supponendo di essere nella root del progetto)
+
+Ancora meglio:
+		$ rake
